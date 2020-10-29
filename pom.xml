@@ -47,6 +47,11 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.7-SNAPSHOT</version>
+				<configuration>
+					<systemPropertyVariables>
+						<jacoco-agent.destfile>randomFoler/jacoco.exec</jacoco-agent.destfile>
+					</systemPropertyVariables>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
